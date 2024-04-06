@@ -4,9 +4,12 @@ import mwMessageList from './mw-messages';
 
 // import modules
 import { Fluff } from './fluff';
+import { BatchDelete } from './batchdelete';
 
 // no customisation; import directly from core
 import { DiffCore as Diff } from './core';
+import { UnlinkCore as Unlink } from './core';
+import { BatchUndeleteCore as BatchUndelete } from './core';
 
 // register some globals for debugging, as per twinkle v2
 import './globals';
@@ -27,7 +30,7 @@ Twinkle.messageOverrides = messages;
 Twinkle.extraMwMessages = mwMessageList;
 
 // List of module classes enabled
-Twinkle.registeredModules = [Fluff, Diff];
+Twinkle.registeredModules = [Fluff, Diff, Unlink, BatchDelete, BatchUndelete];
 
 /**
  * Adjust the following configurations if necessary
