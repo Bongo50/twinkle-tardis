@@ -9,7 +9,7 @@ module.exports = {
 	devtool: 'source-map',
 
 	entry: './src/twinkle.ts',
-	target: ['web', 'es6'],
+	target: ['web', 'es5'],
 	module: {
 		rules: [
 			{
